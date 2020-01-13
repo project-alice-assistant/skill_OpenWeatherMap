@@ -1,11 +1,12 @@
 import sqlite3
 
 from core.base.model.Widget import Widget
+from core.base.model.widgetSizes import WidgetSizes
 
 
 class CurrentWeather(Widget):
 
-	SIZE = 'w_small'
+	SIZE = WidgetSizes.w_small
 	OPTIONS = dict()
 
 	def __init__(self, data: sqlite3.Row):
