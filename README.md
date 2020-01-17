@@ -1,5 +1,7 @@
 # OpenWeatherMap
 
+[![Continous Integration](https://gitlab.com/project-alice-assistant/skills/skill_OpenWeatherMap/badges/master/pipeline.svg)](https://gitlab.com/project-alice-assistant/skills/skill_OpenWeatherMap/pipelines/latest)
+
 ### Download
 
 ##### > WGET method
