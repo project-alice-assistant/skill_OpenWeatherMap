@@ -7,7 +7,7 @@ from core.base.model.widgetSizes import WidgetSizes
 class CurrentWeather(Widget):
 
 	SIZE = WidgetSizes.w_small
-	OPTIONS = dict()
+	OPTIONS: dict = dict()
 
 	def __init__(self, data: sqlite3.Row):
 		super().__init__(data)
