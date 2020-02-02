@@ -1,10 +1,10 @@
 {
 	"name": "OpenWeatherMap",
-	"version": "1.0.4",
+	"version": "1.1.0",
 	"author": "Psychokiller1888",
 	"maintainers": ["maxbachmann"],
 	"desc": "Weather forecast from openweathermap.com",
-	"aliceMinVersion": "1.0.0-a4",
+	"aliceMinVersion": "1.0.0-a5",
 	"systemRequirements": [],
 	"conditions": {
 		"lang": [

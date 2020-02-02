@@ -13,10 +13,10 @@ wget http://skills.projectalice.ch/OpenWeatherMap \
 ### Description
 Weather forecast from openweathermap.com
 
-- Version: 1.0.4
+- Version: 1.1.0
 - Author: Psycho
 - Maintainers: maxbachmann
-- Alice minimum version: 1.0.0-a4
+- Alice minimum version: 1.0.0-a5
 - Conditions:
   - en
   - online
