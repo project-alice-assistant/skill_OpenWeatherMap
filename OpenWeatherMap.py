@@ -59,10 +59,10 @@ class OpenWeatherMap(AliceSkill):
 
 			req = requests.get(url=f'http://api.openweathermap.org/data/2.5/{api}?q={city}&appid={self.getConfig("apiKey")}&lang={self.LanguageManager.activeLanguage}&units={self.getConfig("units")}')
 			if req.status_code != 200:
-				self.log.warning('API not reachable')
+				selflogWarning('API not reachable')
 				return dict()
 
 			return req.json()
 		except Exception as e:
-			self.log.warning(f'Open weather map api call failed: {e}')
+			selflogWarning(f'Open weather map api call failed: {e}')
 			return {}
