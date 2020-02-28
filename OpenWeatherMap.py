@@ -28,7 +28,7 @@ class OpenWeatherMap(AliceSkill):
 					sessionId=session.sessionId,
 					text=self.randomTalk('notFound', replace=[city]),
 					intentFilter=[Intent('AnswerCity')],
-					slot='City',
+					slot='CityNames',
 					currentDialogState='answeringCity'
 				)
 			else:
