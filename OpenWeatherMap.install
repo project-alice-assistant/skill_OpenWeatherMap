@@ -2,7 +2,7 @@
 	"name": "OpenWeatherMap",
 	"version": "1.1.5",
 	"icon": "fab fa-battle-net",
-	"category": "undefined",
+	"category": "weather",
 	"author": "Psychokiller1888",
 	"maintainers": ["maxbachmann"],
 	"desc": "Weather forecast from openweathermap.com",
