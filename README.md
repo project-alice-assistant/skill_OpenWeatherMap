@@ -2,14 +2,6 @@
 
 [![Continous Integration](https://gitlab.com/project-alice-assistant/skills/skill_OpenWeatherMap/badges/master/pipeline.svg)](https://gitlab.com/project-alice-assistant/skills/skill_OpenWeatherMap/pipelines/latest)
 
-### Download
-
-##### > WGET method
-```bash
-wget http://skills.projectalice.ch/OpenWeatherMap \
--O ~/ProjectAlice/system/skillInstallTickets/OpenWeatherMap.install
-```
-
 ### Description
 Weather forecast from openweathermap.com
 
