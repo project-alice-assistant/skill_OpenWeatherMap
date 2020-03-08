@@ -5,7 +5,7 @@
 ### Description
 Weather forecast from openweathermap.com
 
-- Version: 1.1.6
+- Version: 1.1.7
 - Author: Psycho
 - Maintainers: maxbachmann
 - Alice minimum version: 1.0.0-a5
