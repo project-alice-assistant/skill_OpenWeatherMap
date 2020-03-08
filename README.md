@@ -19,5 +19,5 @@ Weather forecast from openweathermap.com
 - Alice minimum version: 1.0.0-a5
 - Conditions:
   - en
-	- de
+  - de
   - online
