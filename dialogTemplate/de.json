@@ -2,6 +2,7 @@
 	"skill": "OpenWeatherMap",
 	"icon": "rain",
 	"description": "Zugriff auf das Wetter mit OpenWeatherMap",
+	"slotTypes": [],
 	"intents": [
 		{
 			"name": "GetWeather",
@@ -27,7 +28,8 @@
 				"schau mal wie das wetter in {London:=>City} ist",
 				"schau bitte mal nach wie das wetter in {London:=>City} ist",
 				"schau mal bitte wie das wetter in {London:=>City} gerade ist",
-				"wie sieht es heute in {London:=>City} aus"
+				"wie sieht es heute in {London:=>City} aus",
+				"wie viel grad haben wir"
 			],
 			"slots": [
 				{
