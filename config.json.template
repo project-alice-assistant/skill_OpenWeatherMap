@@ -2,19 +2,19 @@
 	"apiKey": {
 		"defaultValue": "",
 		"dataType": "string",
-		"isSensitve": true,
+		"isSensitive": true,
 		"description": "Your OpenWeatherMap api key"
 	},
 	"baseLocation": {
 		"defaultValue": "Berlin",
 		"dataType": "string",
-		"isSensitve": false,
+		"isSensitive": false,
 		"description": "The location to use if you do not specify any in your request"
 	},
 	"units": {
 		"defaultValue": "metric",
 		"dataType": "list",
-		"isSensitve": false,
+		"isSensitive": false,
 		"values": ["metric", "imperial", "kelvin"],
 		"description": "The units to use to display the values"
 	}
