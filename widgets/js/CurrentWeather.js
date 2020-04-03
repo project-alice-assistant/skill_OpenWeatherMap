@@ -7,8 +7,8 @@
 	function refresh() {
 		let $icon = '';
 		$.get('http://api.openweathermap.org/data/2.5/weather?q=' + LOCATION + '&appid=' + APIKEY + '&units=' + UNITS_NAME).done(function(answer) {
-			$('#CurrentWeather > #temperature').html(answer['main']['temp'] + '°' + UNITS);
-			$('#CurrentWeather > #location').attr('title', LOCATION);
+			$('#CurrentWeather_body > #temperature').html(answer['main']['temp'] + '°' + UNITS);
+			$('#CurrentWeather_body > #location').html(LOCATION);
 			$icon = $('<img src="http://openweathermap.org/img/wn/' + answer['weather'][0]['icon'] + '.png" alt="icon" id="myWeatherIcon">');
 		}).fail(function() {
 			$icon = $('<i class="fas fa-exclamation-triangle weather-fetch-failed" aria-hidden="true" id="myWeatherIcon"></i>');
@@ -35,7 +35,7 @@
 		LOCATION = answer['location'];
 		UNITS_NAME = answer['unitsName'];
 
-		$('#CurrentWeather > #location').html(LOCATION);
+		$('#CurrentWeather_body > #location').html(LOCATION);
 	}).then(function() {
 		refresh();
 		setInterval(function() {refresh()}, 5 * 60 * 1000);
