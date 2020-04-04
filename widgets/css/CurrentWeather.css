@@ -1,5 +1,4 @@
 .CurrentWeather {
-	background-color: #2e7db2;
 }
 
 .CurrentWeather > .weatherIcon {
@@ -24,4 +23,10 @@
 	font-weight: bold;
 	width: 100%;
 	text-align: center;
+}
+
+.CurrentWeather_body {
+	display: flex;
+    flex-direction: column;
+    text-align: center;
 }
