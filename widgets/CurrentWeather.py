@@ -1,13 +1,13 @@
 import sqlite3
 
 from core.base.model.Widget import Widget
-from core.base.model.widgetSizes import WidgetSizes
+from core.base.model.WidgetSizes import WidgetSizes
 
 
 class CurrentWeather(Widget):
 
-	SIZE = WidgetSizes.w_small
-	OPTIONS: dict = {'customLocation': ''}
+	DEFAULT_SIZE = WidgetSizes.w_small
+	DEFAULT_OPTIONS: dict = {'customLocation': ''}
 
 	def __init__(self, data: sqlite3.Row):
 		super().__init__(data)
