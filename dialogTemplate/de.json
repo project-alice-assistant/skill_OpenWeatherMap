@@ -1,12 +1,9 @@
 {
 	"skill": "OpenWeatherMap",
-	"icon": "rain",
-	"description": "Zugriff auf das Wetter mit OpenWeatherMap",
 	"slotTypes": [],
 	"intents": [
 		{
 			"name": "GetWeather",
-			"description": "Frage nach dem aktuellen Wetter",
 			"enabledByDefault": true,
 			"utterances": [
 				"wie ist das Wetter",
@@ -43,7 +40,6 @@
 		},
 		{
 			"name": "AnswerCity",
-			"description": "Antwort auf die Frage nach dem Ort",
 			"enabledByDefault": false,
 			"utterances": [
 				"{London:=>City}",
