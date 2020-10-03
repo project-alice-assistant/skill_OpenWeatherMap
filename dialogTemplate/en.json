@@ -21,7 +21,6 @@
 			"slots": [
 				{
 					"name": "City",
-					"description": null,
 					"required": false,
 					"type": "Alice/CityNames",
 					"missingQuestion": ""
@@ -47,7 +46,6 @@
 			"slots": [
 				{
 					"name": "City",
-					"description": null,
 					"required": false,
 					"type": "Alice/CityNames",
 					"missingQuestion": ""
