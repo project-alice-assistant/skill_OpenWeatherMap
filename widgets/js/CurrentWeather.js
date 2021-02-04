@@ -7,12 +7,13 @@ class OpenWeatherMap_CurrentWeather {
 		this.apiKey = ''
 		this.units = ''
 		this.unitsName = ''
+		this.aliceSettings = JSON.parse(window.sessionStorage.aliceSettings);
 		this.getBaseData()
 	}
 
 	getBaseData() {
 		const self = this
-		fetch(`http://${window.location.hostname}:5001/api/v1.0.1/widgets/${this.widgetId}/function/baseData/`, {
+		fetch(`http://${this.aliceSettings['aliceIp']}:${this.aliceSettings['apiPort']}/api/v1.0.1/widgets/${this.widgetId}/function/baseData/`, {
 			method: 'POST',
 			body: '{}',
 			headers: {
