@@ -14,7 +14,7 @@ class CurrentWeather(Widget):
 
 
 	def baseData(self) -> dict:
-		location = self.DEFAULT_OPTIONS.get('customLocation') or self.skillInstance.getConfig('baseLocation').title()
+		location = self.skillInstance.getConfig('baseLocation').title()
 		units = 'C'
 		if self.skillInstance.getConfig('units') == 'imperial':
 			units = 'F'
@@ -22,8 +22,8 @@ class CurrentWeather(Widget):
 			units = 'K'
 
 		return {
-			'location': location,
-			'units': units,
+			'location' : location,
+			'units'    : units,
 			'unitsName': self.skillInstance.getConfig('units'),
 			'apiKey': self.skillInstance.getConfig('apiKey')
 		}

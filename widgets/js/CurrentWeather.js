@@ -1,5 +1,5 @@
 class OpenWeatherMap_CurrentWeather {
-	constructor(uid, widgetId) {
+	constructor(uid, widgetId, widget) {
 		this.uid = uid
 		this.widgetId = widgetId
 		this.myDiv = document.querySelector(`[data-ref="CurrentWeather_body_${this.uid}"]`)
@@ -8,6 +8,7 @@ class OpenWeatherMap_CurrentWeather {
 		this.units = ''
 		this.unitsName = ''
 		this.aliceSettings = JSON.parse(window.sessionStorage.aliceSettings);
+		this.widget = widget
 		this.getBaseData()
 	}
 
@@ -34,18 +35,18 @@ class OpenWeatherMap_CurrentWeather {
 	refresh() {
 		let icon = ''
 		const self = this
-
-		fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.location}&appid=${this.apiKey}&units=${this.unitsName}`)
+		let location = this.widget['configs']['customLocation'] || this.location
+		fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${this.apiKey}&units=${this.unitsName}`)
 			.then((r) => r.json())
 			.then((data) => {
 				self.myDiv.querySelector('#temperature').innerHTML = `${data['main']['temp']}° ${self.units}`
-				self.myDiv.querySelector('#location').innerHTML = self.location
+				self.myDiv.querySelector('#location').innerHTML = location
 
 				icon = document.createElement('img')
 				icon.src = `http://openweathermap.org/img/wn/${data['weather'][0]['icon']}.png`
 				icon.alt = 'icon'
 				icon.id = 'myWeatherIcon'
-				setTimeout(this.refresh.bind(this), 5*60*1000)
+				setTimeout(this.refresh.bind(this), 5 * 60 * 1000)
 			})
 			.catch((e) => {
 				console.warn('Failed fetching OWM data')
