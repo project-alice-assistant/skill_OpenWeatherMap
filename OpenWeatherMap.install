@@ -8,7 +8,7 @@
         "maxbachmann",
         "philipp2310"
     ],
-    "desc": "Weather forecast from openweathermap.com",
+    "desc": "Weather forecast from openweathermap.com!",
     "aliceMinVersion": "1.0.0-rc1",
     "systemRequirements": [],
     "conditions": {
