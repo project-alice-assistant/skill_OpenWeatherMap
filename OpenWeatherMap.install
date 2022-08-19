@@ -1,6 +1,6 @@
 {
     "name": "OpenWeatherMap",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "icon": "fas fa-cloud-sun",
     "category": "weather",
     "author": "Psychokiller1888",
