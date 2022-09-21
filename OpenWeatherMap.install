@@ -14,7 +14,8 @@
     "conditions": {
         "lang": [
             "en",
-            "de"
+            "de",
+	    "pt"
         ],
         "online": true
     }

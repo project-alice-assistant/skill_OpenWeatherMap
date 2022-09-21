@@ -1,0 +1,63 @@
+{
+	"skill": "OpenWeatherMap",
+	"slotTypes": [],
+	"intents": [
+		{
+			"name": "GetWeather",
+			"enabledByDefault": true,
+			"utterances": [
+				"Como está o tempo",
+				"Como está o clima",
+				"diga-me qual é o clima",
+				"você pode me dizer o tempo, por favor",
+				"Gostaria de saber como está o tempo",
+				"Gostaria de saber como está o clima",
+				"como está lá fora",
+				"qual a temperatura de hoje",
+				"Hoje vai chover ?",
+				"Qual a previsão do tempo em {Paris:=>City}",
+				"diga-me o clima atual em {Paris:=>City}",
+				"como está o clima {Berlin:=>City}",
+				"diga-me o tempo real em {Bern:=>City}",
+				"como está o clima em {Moscow:=>City}",
+				"como está o tempo em {Moscow:=>City}",
+				"quais as condições meteorológicas atuais em {New York:=>City} por favor",
+				"quais as condições climaticas atuais em {New York:=>City} por favor",
+				"como está {London:=>City}"
+			],
+			"slots": [
+				{
+					"name": "City",
+					"required": false,
+					"type": "Alice/CityNames",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "AnswerCity",
+			"enabledByDefault": false,
+			"utterances": [
+				"{London:=>City}",
+				"em {Paris:=>City}",
+				"{Zurich:=>City} por favor",
+				"em {Munich:=>City} por favor",
+				"em {Glasgow:=>City}",
+				"{Bern:=>City}",
+				"{Lausanne:=>City}",
+				"{New York:=>City}",
+				"{Washington:=>City}",
+				"{Hamburg:=>City}",
+				"{Marseille:=>City}"
+			],
+			"slots": [
+				{
+					"name": "City",
+					"required": false,
+					"type": "Alice/CityNames",
+					"missingQuestion": ""
+				}
+			]
+		}
+	]
+}
