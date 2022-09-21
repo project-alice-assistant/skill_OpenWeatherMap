@@ -1,0 +1,16 @@
+{
+	"currentWeather": [
+		"Atualmente em {0} está {1}° e {2}",
+		"Agora em  {0} está {1}° e {2}",
+		"Está {1}° e {2} agora em  {0}"
+	],
+	"forecast": [
+		"{} em {} será {} com um máximo de  {} e minima de  {}"
+	],
+	"notFound": [
+		"Desculpe, não encontrei dados meteorológicos para {}. Diga-me para qual cidade você está procurando o clima"
+	],
+	"noApiKey": [
+		"Você não especificou sua chave de API na habilidade de mapa climático aberto. Por favor, faça isso e eu serei capaz de lhe responder!"
+	]
+}
